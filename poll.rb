@@ -53,7 +53,7 @@ def listen_to_long_poll_url(url, stream_position)
       collect_and_print_event_details(stream_position)
     elsif response.timed_out?
       # aw hell no
-      puts "got a weird time out. Should not happen".red
+      puts "Got a weird time out. Should not happen".red
     elsif response.code == 0
       # Could not get an http response, something's wrong.
       puts "Bad situation reached: #{response.return_message}"
@@ -69,9 +69,9 @@ end
 # Keep polling till stopped.
 puts 'Starting Script.'.blue
 loop do
-  # Get Current Stream Position
+  # Get Current Stream Position.
   current_stream_position = get_current_location
-  # Ge The long Poll URL
+  # Get The long Poll URL.
   long_poll_url = get_long_poll_url
   # Listen to long poll URL
   listen_to_long_poll_url(long_poll_url, current_stream_position)
