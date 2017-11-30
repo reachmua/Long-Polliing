@@ -6,8 +6,8 @@ require 'typhoeus'
 require 'json'
 
 HEADER_OPTIONS = {
-  # Expires every 60 minutes.
-  headers: {"Authorization" => "Bearer vrrAQqZc6VEia8lYCLPKIzutLQD9V5du"}
+  # Expires every 60 minutes. 'developer_token = Generate in app.box.com'
+  headers: {"Authorization" => "Bearer developer_token"}
 }
 
 # Determine current stream position.
