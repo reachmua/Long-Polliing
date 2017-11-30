@@ -1,3 +1,6 @@
+# poll.rb
+# Beget: 11/26/2017
+
 require 'colorize'
 require 'typhoeus'
 require 'json'
